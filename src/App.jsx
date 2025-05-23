@@ -1,14 +1,6 @@
-import { Route, Routes } from "react-router";
-import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
-
+import BasicRouter from "./router/BasicRouter";
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="*" element={<NotFound />}></Route>
-    </Routes>
-  );
+  return <BasicRouter />;
 }
 
 export default App;
